@@ -1,4 +1,4 @@
-# codeWars
+# CodeWars
 
 My solutions to challenges (katas) on codewars.com
 
