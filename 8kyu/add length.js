@@ -13,3 +13,5 @@ function addLength(str) {
 }
 
 console.log(addLength("b cMZshqaN A Zo rE IzmuIhjJG S D h p I icnQiAq"))
+
+//YES I MATCHED THE TOP ANSWER FIRST TRY!
