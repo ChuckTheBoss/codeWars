@@ -32,14 +32,25 @@
 // As the Next closest year with only distinct digits is 1023 .
 
 function nextHappyYear(year) {
-
-    let digits = String(year).split("");
-    return digits.some(digit => {
+    let happyYear = (digits) => digits.some(digit => {
         for (let i = 0; i < 4; i++) {
-            return digit === digits[i]
+            //console.log(i, digit, digits.indexOf(digit))
+            if (digits.indexOf(digit) !== i) {
+                result = digit === digits[i];
+                if (result === true) {
+                    //console.log(result)
+                    return result
+                }
+            }
         }
     })
-    // TODO it currently works for ALL 4 digit numbers, since it's iterating on ALL indecies instead of each index instead of itself. 
+    for (i = year + 1; i <= 9999; i++) {
+        //console.log(i)
+        let digits = String(i).split("")
+        if (happyYear(digits) !== true) {
+            return i
+        }
+    }
 }
 
-console.log(nextHappyYear(7412));
+console.log(nextHappyYear(2001));
