@@ -24,6 +24,8 @@
 
 // The middle character(s) of the word represented as a string.
 
+//NOT FINISHED
+
 function getMiddle(s) {
     let word = s.split("");
     const middle1 = word[Math.floor(s.length / 2)];
